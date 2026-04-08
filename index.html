@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opofinance Marketing Command Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="orb orb-left"></div>
+      <div class="orb orb-right"></div>
+      <div class="grid-glow"></div>
+
+      <main class="screen auth-screen active" id="authScreen">
+        <section class="brand-panel auth-showcase">
+          <div>
+            <div class="brand-badge">Marketing Intelligence</div>
+            <h1>Create your growth cockpit</h1>
+            <p>
+              Explore a premium marketing dashboard for a forex brokerage with
+              campaign momentum, conversion glow, and regional lead intelligence.
+            </p>
+            <button class="ghost-link" type="button">See what's inside</button>
+          </div>
+
+          <div class="showcase-art">
+            <div class="float-card bubble-one">
+              <div class="float-card-core">
+                <span>CTR Lift</span>
+                <strong>+14%</strong>
+              </div>
+            </div>
+            <div class="float-card bubble-two">
+              <div class="float-card-core ring-core"></div>
+            </div>
+            <div class="float-card bubble-three">
+              <div class="float-card-core">
+                <span>Lead Heat</span>
+                <strong>MENA</strong>
+              </div>
+            </div>
+            <div class="starfield"></div>
+          </div>
+        </section>
+
+        <section class="auth-panel auth-panel-light">
+          <div class="auth-topline">
+            <span>Already have an account?</span>
+            <button class="text-link switch-link top-switch" type="button" data-target="loginForm">
+              Sign in
+            </button>
+          </div>
+
+          <div class="tabs auth-tabs">
+            <button class="tab active" data-target="loginForm">Login</button>
+            <button class="tab" data-target="signupForm">Sign Up</button>
+          </div>
+
+          <form class="form active" id="loginForm">
+            <div class="form-header">
+              <h2>Sign in to command center</h2>
+              <p>Use any email and password to enter the dashboard demo.</p>
+            </div>
+
+            <label>
+              <span>Email</span>
+              <input type="email" id="loginEmail" placeholder="name@opofinance.com" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" id="loginPassword" placeholder="••••••••" required />
+            </label>
+
+            <button type="submit" class="primary-btn auth-submit">Enter Command Center</button>
+            <p class="form-note">
+              New here?
+              <button type="button" class="text-link switch-link" data-target="signupForm">
+                Create one
+              </button>
+            </p>
+          </form>
+
+          <form class="form" id="signupForm">
+            <div class="form-header">
+              <h2>Create your free account</h2>
+              <p>This is a frontend demo, so sign up is simulated for showcase purposes.</p>
+            </div>
+
+            <label>
+              <span>Name</span>
+              <input type="text" id="signupName" placeholder="Your full name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="signupEmail" placeholder="name@opofinance.com" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" id="signupPassword" placeholder="Create a password" required />
+            </label>
+
+            <button type="submit" class="primary-btn auth-submit">Create Demo Account</button>
+            <p class="form-note">
+              Already registered?
+              <button type="button" class="text-link switch-link" data-target="loginForm">
+                Go to login
+              </button>
+            </p>
+          </form>
+        </section>
+      </main>
+
+      <main class="screen dashboard-screen" id="dashboardScreen">
+        <aside class="sidebar glass-panel">
+          <div class="logo-mark">
+            <span class="logo-ring"></span>
+            <span class="logo-text">opo</span>
+          </div>
+
+          <nav class="sidebar-nav">
+            <a class="nav-item active" href="#">Overview</a>
+            <a class="nav-item" href="#">Campaigns</a>
+            <a class="nav-item" href="#">Lead Funnel</a>
+            <a class="nav-item" href="#">Regional Pulse</a>
+            <a class="nav-item" href="#">Social Radar</a>
+            <a class="nav-item" href="#">Reports</a>
+          </nav>
+
+          <div class="sidebar-card">
+            <p>Conversion Goal</p>
+            <strong>81%</strong>
+            <span>On track for monthly target</span>
+          </div>
+        </aside>
+
+        <section class="dashboard-main">
+          <header class="topbar glass-panel">
+            <div>
+              <p class="eyebrow">Today's growth pulse</p>
+              <h1 id="welcomeName">Linda W.</h1>
+            </div>
+
+            <div class="topbar-actions">
+              <div class="search-box">
+                <span>Search campaigns, channels, regions...</span>
+              </div>
+              <div class="profile-chip">
+                <div class="avatar">LW</div>
+                <div>
+                  <strong>Marketing Specialist</strong>
+                  <span>Forex Brokerage</span>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <section class="hero-grid">
+            <article class="hero-card feature-card glass-panel">
+              <div>
+                <p class="eyebrow">Lead Momentum</p>
+                <h2>1,284 qualified leads</h2>
+                <p class="muted">
+                  Performance accelerated after the spring acquisition sprint.
+                </p>
+              </div>
+              <div class="stat-badge positive">+18.2%</div>
+            </article>
+
+            <article class="hero-card cta-card glass-panel">
+              <p class="eyebrow">Campaign Launch</p>
+              <h2>Make the next move</h2>
+              <div class="cta-controls">
+                <div class="select-pill">MENA Retargeting</div>
+                <button class="primary-btn secondary-glow">Launch Campaign</button>
+              </div>
+            </article>
+
+            <article class="hero-card radial-card glass-panel">
+              <p class="eyebrow">Conversion Goal Progress</p>
+              <div class="radial-meter">
+                <div class="meter-core">
+                  <strong>81%</strong>
+                  <span>Goal hit</span>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="stats-grid">
+            <article class="metric-card glass-panel">
+              <span class="metric-label">Campaign ROI</span>
+              <strong>$48.2K</strong>
+              <span class="metric-trend positive">+12.4% vs last month</span>
+            </article>
+            <article class="metric-card glass-panel">
+              <span class="metric-label">Landing Page CVR</span>
+              <strong>6.8%</strong>
+              <span class="metric-trend positive">+1.1 pts uplift</span>
+            </article>
+            <article class="metric-card glass-panel">
+              <span class="metric-label">Traffic Quality Score</span>
+              <strong>88/100</strong>
+              <span class="metric-trend">Stable across paid channels</span>
+            </article>
+            <article class="metric-card glass-panel">
+              <span class="metric-label">Social Engagement</span>
+              <strong>142K</strong>
+              <span class="metric-trend positive">+24% interaction rate</span>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="chart-card glass-panel">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Campaign Momentum</p>
+                  <h3>Weekly performance trend</h3>
+                </div>
+                <span class="pill">Live</span>
+              </div>
+
+              <div class="chart-area">
+                <div class="chart-line chart-line-one"></div>
+                <div class="chart-line chart-line-two"></div>
+                <div class="chart-bars">
+                  <span style="--size: 46%"></span>
+                  <span style="--size: 64%"></span>
+                  <span style="--size: 58%"></span>
+                  <span style="--size: 79%"></span>
+                  <span style="--size: 87%"></span>
+                  <span style="--size: 72%"></span>
+                </div>
+                <div class="chart-labels">
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span>Sat</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="list-card glass-panel">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Top Channels</p>
+                  <h3>Acquisition mix</h3>
+                </div>
+              </div>
+
+              <ul class="channel-list">
+                <li>
+                  <div>
+                    <strong>Google Ads</strong>
+                    <span>High-intent search traffic</span>
+                  </div>
+                  <b>34%</b>
+                </li>
+                <li>
+                  <div>
+                    <strong>Instagram</strong>
+                    <span>Strong awareness and retargeting</span>
+                  </div>
+                  <b>26%</b>
+                </li>
+                <li>
+                  <div>
+                    <strong>Email</strong>
+                    <span>Best lead nurturing conversion</span>
+                  </div>
+                  <b>22%</b>
+                </li>
+                <li>
+                  <div>
+                    <strong>Affiliate / IB</strong>
+                    <span>Stable regional partnerships</span>
+                  </div>
+                  <b>18%</b>
+                </li>
+              </ul>
+            </article>
+
+            <article class="timeline-card glass-panel">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Recent Campaign Activity</p>
+                  <h3>What moved today</h3>
+                </div>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>MENA landing page refresh deployed</strong>
+                    <p>CTR rose 9% in the first two hours after update.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>VIP lead segment exported to sales</strong>
+                    <p>42 high-quality prospects routed for fast follow-up.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>Social creative A/B test completed</strong>
+                    <p>Variant B won with a 14% stronger engagement rate.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
