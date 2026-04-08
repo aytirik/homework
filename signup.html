@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opofinance Login</title>
+    <title>Opofinance Sign Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body data-theme="dark" data-page="login">
+  <body data-theme="dark" data-page="signup">
     <div class="app-shell">
       <div class="orb orb-left"></div>
       <div class="orb orb-right"></div>
@@ -21,24 +21,24 @@
       <main class="auth-screen">
         <section class="brand-panel auth-showcase">
           <div class="showcase-copy">
-            <div class="brand-badge">Marketing Intelligence</div>
-            <h1>Create your growth cockpit</h1>
+            <div class="brand-badge">Growth Access</div>
+            <h1>Build your free dashboard profile</h1>
             <p>
-              A premium login experience for a forex brokerage marketing
-              dashboard, designed with a modern glassmorphism vibe.
+              Create a demo account and jump into a marketing command center
+              built for campaign analytics and conversion performance.
             </p>
             <div class="showcase-pills">
-              <span class="showcase-pill">Responsive UI</span>
-              <span class="showcase-pill">Material-Inspired</span>
-              <span class="showcase-pill">Dark Theme</span>
+              <span class="showcase-pill">Sign Up</span>
+              <span class="showcase-pill">Multi Screen</span>
+              <span class="showcase-pill">Frontend Only</span>
             </div>
           </div>
 
           <div class="showcase-art">
             <div class="float-card bubble-one">
               <div class="float-card-core">
-                <span>CTR Lift</span>
-                <strong>+14%</strong>
+                <span>Qualified Leads</span>
+                <strong>1.2K</strong>
               </div>
             </div>
             <div class="float-card bubble-two">
@@ -46,14 +46,14 @@
             </div>
             <div class="float-card bubble-three">
               <div class="float-card-core">
-                <span>Lead Heat</span>
-                <strong>MENA</strong>
+                <span>Best Region</span>
+                <strong>UAE</strong>
               </div>
             </div>
             <div class="showcase-surface">
-              <span class="mini-label">Live campaign pulse</span>
-              <strong>$48.2K ROI</strong>
-              <p>Regional retargeting is outperforming the monthly benchmark.</p>
+              <span class="mini-label">Activation pulse</span>
+              <strong>+21% Signups</strong>
+              <p>Fresh creative is converting more first-time visitors.</p>
             </div>
             <div class="starfield"></div>
           </div>
@@ -61,32 +61,35 @@
 
         <section class="auth-panel auth-panel-light surface-panel">
           <div class="auth-topline">
-            <span>Need an account?</span>
-            <a class="text-btn" href="signup.html">Sign up</a>
+            <span>Already have an account?</span>
+            <a class="text-btn" href="index.html">Sign in</a>
           </div>
 
-          <form class="form active" id="loginForm">
+          <form class="form active" id="signupForm">
             <div class="form-header">
-              <h2>Sign in to command center</h2>
-              <p>Use any email and password to preview the dashboard.</p>
+              <h2>Create your free account</h2>
+              <p>Set up a demo identity and jump straight into the dashboard.</p>
             </div>
 
             <label class="field">
+              <span>Name</span>
+              <input type="text" id="signupName" placeholder="Your full name" required />
+              <small>This will appear in the dashboard header.</small>
+            </label>
+
+            <label class="field">
               <span>Email</span>
-              <input type="email" id="loginEmail" placeholder="name@opofinance.com" required />
-              <small>We use this only to personalize the demo.</small>
+              <input type="email" id="signupEmail" placeholder="name@opofinance.com" required />
+              <small>Any email works for this homework project.</small>
             </label>
 
             <label class="field">
               <span>Password</span>
-              <input type="password" id="loginPassword" placeholder="••••••••" required />
-              <small>Authentication is simulated in JavaScript.</small>
+              <input type="password" id="signupPassword" placeholder="Create a password" required />
+              <small>No backend is connected, so this is purely visual.</small>
             </label>
 
-            <div class="button-row">
-              <button type="submit" class="primary-btn auth-submit">Enter Command Center</button>
-              <button class="tonal-btn" type="button" id="guestLogin">Use Guest Preview</button>
-            </div>
+            <button type="submit" class="primary-btn auth-submit">Create Demo Account</button>
           </form>
         </section>
       </main>
